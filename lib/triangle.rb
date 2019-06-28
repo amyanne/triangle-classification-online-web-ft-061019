@@ -9,7 +9,7 @@ class Triangle
   end 
   
   def kind 
-    if side_1 < 1 || side_2 < 1 || side_3 < 1 
+    if side_1 <= 0 || side_2 <= 0 || side_3 <= 0
       raise TriangleError
     elsif side_1 == side_2 && side_2 == side_3
       :equilateral
